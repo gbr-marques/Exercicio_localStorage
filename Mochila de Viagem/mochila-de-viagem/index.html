@@ -15,13 +15,16 @@
     <main class="conteudo">
         <div class="principal">
             <div class="mochila"></div>
-            <form action="" class="adicionar" id="novoItem">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="quantidade">Quantidade</label>
-                <input type="number" name="quantidade" id="quantidade">
-                <input type="submit" value="Adicionar" class="cadastrar">
-            </form>
+            <div>
+                <form action="" class="adicionar" id="novoItem">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" required>
+                    <input type="submit" value="Adicionar" class="cadastrar" required>
+                </form>
+                <button class="limpa_lista" id="limpa">Limpar lista</button>
+            </div>
         </div>
         
         <ul id="lista" class="lista">
